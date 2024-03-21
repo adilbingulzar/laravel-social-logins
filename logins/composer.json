@@ -1,0 +1,28 @@
+{
+    "name": "social/logins",
+    "description": "this is use for social logins",
+    "license": "MIR",
+    "autoload": {
+        "psr-4": {
+            "Social\\Logins\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adil",
+            "email": "adilbingulzar@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Logins\\src\\LoginServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^8.0",
+        "laravel/socialite": "^5.0"
+    }
+
+}
