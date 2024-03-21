@@ -21,6 +21,9 @@ use Social\Logins\Http\Controllers\LinkedinController;
 Route::get('/social/login', function () {
     return view('logins::social-login');
 });
+Route::get('/welcome', function () {
+    return view('logins::welcome');
+});
 
 Route::get('/login/google', [GoogleLoginController::class, 'redirectToGoogle']);
 Route::get('/google/login/callback', [GoogleLoginController::class, 'handleGoogleCallback']);
