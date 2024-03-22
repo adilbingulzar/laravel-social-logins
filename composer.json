@@ -23,5 +23,13 @@
     "require": {
         "illuminate/support": "^9.21|^10.0",
         "laravel/socialite": "^5.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan migrate --path=vendor/social/logins/database/migrations"
+        ],
+        "post-update-cmd": [
+            "@php artisan migrate --path=vendor/social/logins/database/migrations"
+        ]
     }
 }
