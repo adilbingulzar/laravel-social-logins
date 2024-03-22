@@ -1,7 +1,7 @@
 {
     "name": "social/logins",
-    "description": "this is use for social logins",
-    "license": "MIR",
+    "description": "This is use for social logins",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Social\\Logins\\": "src/"
