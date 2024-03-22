@@ -1,6 +1,6 @@
 {
     "name": "social/logins",
-    "description": "This is use for social logins",
+    "description": "This package provides social login functionality for Laravel applications.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Logins\\src\\LoginServiceProvider"
+                "Social\\Logins\\LoginServiceProvider"
             ]
         }
     },
@@ -24,5 +24,4 @@
         "illuminate/support": "^8.0",
         "laravel/socialite": "^5.0"
     }
-
 }
