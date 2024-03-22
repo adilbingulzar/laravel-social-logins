@@ -17,16 +17,14 @@
         "laravel": {
             "providers": [
                 "Social\\Logins\\LoginServiceProvider"
+            ],
+            "migrations": [
+                "Social\\Logins\\Database\\Migrations"
             ]
         }
     },
     "require": {
         "illuminate/support": "^9.21|^10.0",
         "laravel/socialite": "^5.0"
-    },
-    "scripts": {
-        "migrate": [
-            "php artisan migrate --env=$LARAVEL_ENV"
-        ]
     }
 }
